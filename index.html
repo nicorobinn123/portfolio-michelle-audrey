@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Michelle Audrey</title>
+    <!-- Use Playfair Display and Inter fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfbf8;
+            /* A very light, warm off-white */
+            line-height: 1.6;
+            color: #44403c;
+            /* Dark stone color for text */
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .logo-circle {
+            background-color: #7b4f3a;
+            /* Deep reddish-brown */
+            color: white;
+        }
+
+        .accent-text {
+            color: #7b4f3a;
+        }
+
+        .section-header {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .project-link {
+            transition: all 0.3s ease-in-out;
+            border-bottom: 1px solid currentColor;
+            padding-bottom: 2px;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            letter-spacing: 0.05em;
+            border-bottom-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col items-center justify-start min-h-screen p-4 pt-16">
+
+    <!-- Header & Navigation -->
+    <header class="bg-[#fcfbf8] w-full sticky top-0 z-50 py-4 border-b border-gray-200">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="hero-title text-3xl font-normal text-gray-900">Michelle Audrey</a>
+            <div class="space-x-8">
+                <a href="#about"
+                    class="text-sm font-medium hover:underline underline-offset-4 transition-all duration-300">About</a>
+                <a href="#projects"
+                    class="text-sm font-medium hover:underline underline-offset-4 transition-all duration-300">Projects</a>
+                <a href="#contact"
+                    class="text-sm font-medium hover:underline underline-offset-4 transition-all duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center my-24">
+        <!-- Main Heading -->
+        <h1 class="hero-title text-5xl sm:text-6xl md:text-7xl font-light mb-6 relative">
+            Hello, I am <span class="accent-text font-normal">Michelle Audrey!</span>
+        </h1>
+        <!-- Subtitle -->
+        <p class="text-lg sm:text-xl max-w-2xl mx-auto mb-16">
+            An aspiring UI/UX designer and front-end developer, eager to create meaningful digital experiences using
+            HTML, CSS, and JavaScript, and grow with a dynamic team.
+        </p>
+        <!-- Call to Action -->
+        <a href="#projects" class="project-link text-gray-700 hover:text-gray-900 text-lg font-light italic">
+            See My Work
+        </a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="w-full max-w-5xl px-4 mb-24">
+        <h2 class="section-header text-4xl sm:text-5xl font-light text-center mb-16">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/3 flex-shrink-0">
+                <div class="w-56 h-72 mx-auto rounded-2xl overflow-hidden border-4 border-gray-300 shadow-xl">
+                    <img src="Assets/profile.jpg" alt="Your Profile Picture" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="w-full md:w-2/3 text-center md:text-left">
+                <p class="text-lg leading-relaxed mb-4">
+                    I am a Computer Science student at Binus University, passionate about UI/UX design and front-end
+                    development.
+                    I focus on creating clean, user-friendly, and visually engaging interfaces that balance aesthetics
+                    with functionality.
+                    I enjoy collaborating on projects with teammates and applying practical solutions to real-world
+                    challenges.
+                </p>
+                <p class="text-lg leading-relaxed mb-4">
+                    Through my projects, I have developed skills in HTML, CSS, JavaScript, Tailwind CSS, and Figma.
+                    I am committed to continuous learning and growth, eager to contribute my creative perspective and
+                    collaborative mindset to impactful
+                    projects while further developing my design and programming abilities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Projects Section (Now placed after About Me) -->
+    <section id="projects" class="w-full max-w-3xl px-4 mb-16">
+        <h2 class="section-header text-4xl sm:text-5xl font-light text-center mb-16">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Project Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://placehold.co/800x600/b09e99/fcfbf8?text=Project+1" alt="Project 1"
+                    class="w-full h-auto object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2">D'Classics Book Mobile App</h3>
+                    <p class="text-gray-600 text-sm mb-2">
+                        A mobile app for discovering, purchasing books with genre browsing, and location-based bookstore
+                        recommendations.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-600 text-sm space-y-0.5 mb-3">
+                        <li>Technologies: Android Studio, Axure RP, AI Tools</li>
+                        <li>Role: Built core features in Android Studio, collaborated on design</li>
+                    </ul>
+                    <div class="flex space-x-4 text-sm">
+                        <a href="https://drive.google.com/file/d/1WhnJKBXsH2_GwUrCUaTyvz88SQI5W_OI/view?usp=sharing"
+                            class="project-link text-gray-700 hover:text-gray-900" target="_blank"
+                            rel="noopener noreferrer">
+                            Watch Demo
+                        </a>
+                        <a href="https://github.com/nicorobinn123/dclassics-mobile-app"
+                            class="project-link text-gray-700 hover:text-gray-900" target="_blank"
+                            rel="noopener noreferrer">
+                            Show Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://placehold.co/800x600/5c5c5c/e0e0e0?text=Project+2" alt="Project 2"
+                    class="w-full h-auto object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2">Allure: AI Fashion Website</h3>
+                    <p class="text-gray-600 text-sm mb-2">
+                        Collaborative web platform for outfit management with AI-assisted styling suggestions and
+                        calendar planning
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-600 text-sm space-y-0.5 mb-3">
+                        <li>Technologies: HTML, CSS, JavaScript, Figma, AI Tools</li>
+                        <li>Role: Built front-end features, collaborated on UI/UX design
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 text-sm">
+                        <a href="https://nicorobinn123.github.io/allure-website/"
+                            class="project-link text-gray-700 hover:text-gray-900" target="_blank"
+                            rel="noopener noreferrer">
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/nicorobinn123/allure-website/"
+                            class="project-link text-gray-700 hover:text-gray-900" target="_blank"
+                            rel="noopener noreferrer">
+                            Show Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://placehold.co/800x600/d9a48f/fcfbf8?text=Project+3" alt="Project 3"
+                    class="w-full h-auto object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2">Roadstar Dealership Website</h3>
+                    <p class="text-gray-600 text-sm mb-2">
+                        A web-based dealership platform for browsing car models by type with images and interactive 360°
+                        previews.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-600 text-sm space-y-0.5 mb-3">
+                        <li>Technologies: HTML, CSS, JavaScript, Three.js, Figma, AI Tools</li>
+                        <li>Role: Designed the website in Figma and developed the front end with HTML, CSS, and
+                            JavaScript</li>
+                    </ul>
+                    <div class="flex space-x-4 text-sm">
+                        <a href="https://drive.google.com/file/d/1mUPNrEfrUSi8Pguhs8eoZtDQppeKbR0F/view?usp=sharing"
+                            class="project-link text-gray-700 hover:text-gray-900" target="_blank"
+                            rel="noopener noreferrer">
+                            Watch Demo
+                        </a>
+                        <a href="https://github.com/nicorobinn123/roadstar-dealership-website"
+                            class="project-link text-gray-700 hover:text-gray-900" target="_blank"
+                            rel="noopener noreferrer">
+                            Show Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 4 -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://placehold.co/800x600/6a6a6a/fcfbf8?text=Project+4" alt="Project 4"
+                    class="w-full h-auto object-cover rounded-t-xl">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2">TARA: AI Sign Language Website</h3>
+                    <p class="text-gray-600 text-sm mb-2">
+                        A web platform for learning sign language with video lessons, quizzes, community, and an AI translation concept.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-600 text-sm space-y-0.5 mb-3">
+                        <li>Technologies: HTML, CSS, JavaScript, Figma, AI Tools</li>
+                        <li>Role: Built the website and implemented UI/UX; collaborated on design, documentation, and AI
+                            concept</li>
+                    </ul>
+                    <div class="flex space-x-4 text-sm">
+                        <a href="https://nicorobinn123.github.io/TARA-website/"
+                            class="project-link text-gray-700 hover:text-gray-900" target="_blank"
+                            rel="noopener noreferrer">
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/nicorobinn123/TARA-website/"
+                            class="project-link text-gray-700 hover:text-gray-900" target="_blank"
+                            rel="noopener noreferrer">
+                            Show Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New LinkedIn Link for all projects -->
+        <div class="text-center mt-12">
+            <a href="https://www.linkedin.com/in/michelle-audrey-profile/details/projects/"
+                class="project-link text-lg font-light italic hover:text-gray-900" target="_blank"
+                rel="noopener noreferrer">
+                View all of my projects on LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="w-full max-w-3xl px-4 mb-16 text-center">
+        <h2 class="section-header text-4xl sm:text-5xl font-light mb-16">Get in Touch</h2>
+        <p class="text-lg max-w-xl mx-auto mb-10">
+            I'm currently seeking a UI/UX or web development internship opportunity. Let's connect to discuss how my
+            skills and passion can contribute to your team.
+        </p>
+        <div class="flex justify-center space-x-6">
+            <a href="mailto:your.email@example.com"
+                class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-6 9h4a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                    </path>
+                </svg>
+            </a>
+            <!-- LinkedIn Icon updated with placeholder URL -->
+            <a href="#[YOUR LINKEDIN URL HERE]"
+                class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387 1.903.345 2.766-.823 2.766-1.85 0-.918-.035-2.695-.04-3.525-3.332.724-4.04-1.606-4.04-1.606-.546-1.387-1.332-1.756-1.332-1.756-1.085-.742.083-.728.083-.728 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.492.997.108-.775.419-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.312.468-2.385 1.236-3.221-.124-.3-1.057-3.03.118-3.18 0 0 1.006-.322 3.304 1.23.953-.264 1.98-.396 3-.396s2.047.132 3 .396c2.298-1.552 3.304-1.23 3.304-1.23.273.85.068 2.887-.124 3.18.768.835 1.236 1.908 1.236 3.221 0 4.609-2.804 5.621-5.475 5.922.43.37.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .307.199.664.777.545C20.56 21.79 24 17.292 24 12 24 5.373 18.627 0 12 0z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center w-full py-8 text-sm text-gray-500">
+        <p>&copy; 2025 Michelle Audrey. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
